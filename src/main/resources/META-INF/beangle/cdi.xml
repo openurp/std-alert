@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<cdi>
+  <container>
+    <module class="org.openurp.std.alert.web.DefaultModule"/>
+    <module class="org.openurp.starter.web.ProjectModule"/>
+    <module class="org.openurp.std.alert.service.ServiceModule"/>
+  </container>
+</cdi>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orm>
+  <mapping class="org.openurp.std.alert.model.DefaultMapping" name="std.alert"/>
+  <naming>
+    <profile package = "org.openurp.std.alert" pluralize="true" schema="std"/>
+  </naming>
+</orm>
