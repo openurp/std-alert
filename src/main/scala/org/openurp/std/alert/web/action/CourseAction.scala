@@ -18,7 +18,7 @@
 package org.openurp.std.alert.web.action
 
 import org.beangle.data.dao.OqlBuilder
-import org.beangle.web.action.view.View
+import org.beangle.webmvc.view.View
 import org.beangle.webmvc.support.action.{ExportSupport, RestfulAction}
 import org.openurp.base.edu.model.Course
 import org.openurp.base.model.{Project, Semester}

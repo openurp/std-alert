@@ -17,9 +17,9 @@
 
 package org.openurp.std.alert.service
 
-import org.beangle.cdi.bind.BindModule
+import org.beangle.commons.cdi.BindModule
 import org.openurp.edu.grade.domain.DefaultCourseGradeProvider
-import org.openurp.edu.grade.service.impl.BestGradeFilter
+import org.openurp.edu.grade.service.filters.BestGradeFilter
 import org.openurp.edu.program.domain.DefaultAlternativeCourseProvider
 import org.openurp.std.alert.service.impl.{AlertForGradeServiceImpl, UnpassedCountStat, UnpassedCreditsStat, UnpassedCreditsStatBySemester}
 

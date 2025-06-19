@@ -17,7 +17,7 @@
 
 package org.openurp.std.alert.web
 
-import org.beangle.cdi.bind.BindModule
+import org.beangle.commons.cdi.BindModule
 import org.openurp.std.alert.web.action._
 
 class DefaultModule extends BindModule {

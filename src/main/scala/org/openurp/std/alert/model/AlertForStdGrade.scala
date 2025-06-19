@@ -17,15 +17,15 @@
 
 package org.openurp.std.alert.model
 
-import org.openurp.base.std.model.Student
-import org.openurp.base.model.{ProjectBased, Semester}
 import org.beangle.data.model.LongId
 import org.beangle.data.model.pojo.Updated
+import org.openurp.base.model.{ProjectBased, Semester}
+import org.openurp.base.std.model.Student
 
 /**
  * 成绩学业预警情况
  */
-class AlertForStdGrade extends LongId with Updated with ProjectBased {
+class AlertForStdGrade extends LongId, Updated, ProjectBased {
   /**
    * 需要查看各学期预警变化情况
    */

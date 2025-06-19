@@ -22,7 +22,7 @@ import org.openurp.base.model.Semester
 import org.openurp.base.std.model.Student
 import org.openurp.edu.grade.BaseServiceImpl
 import org.openurp.edu.grade.model.{CourseGrade, Grade}
-import org.openurp.edu.grade.service.impl.BestGradeFilter
+import org.openurp.edu.grade.service.filters.BestGradeFilter
 import org.openurp.std.alert.service.UnpassedCreditsStatService
 
 abstract class AllGradeStat extends BaseServiceImpl with UnpassedCreditsStatService {

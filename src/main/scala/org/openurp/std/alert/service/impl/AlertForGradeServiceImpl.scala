@@ -17,7 +17,7 @@
 
 package org.openurp.std.alert.service.impl
 
-import org.beangle.cdi.{Container, ContainerAware}
+import org.beangle.commons.cdi.{Container, ContainerAware}
 import org.beangle.commons.collection.Collections
 import org.beangle.data.dao.OqlBuilder
 import org.openurp.base.model.Semester
@@ -28,7 +28,7 @@ import org.openurp.std.alert.service.{AlertForGradeService, UnpassedCreditsStatS
 
 import java.time.Instant
 
-class AlertForGradeServiceImpl extends BaseServiceImpl with AlertForGradeService with ContainerAware {
+class AlertForGradeServiceImpl extends BaseServiceImpl, AlertForGradeService, ContainerAware {
 
   var container: Container = _
 

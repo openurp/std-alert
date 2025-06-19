@@ -22,9 +22,9 @@ import org.beangle.commons.codec.digest.Digests
 import org.beangle.commons.io.{Dirs, IOs}
 import org.beangle.commons.lang.Strings
 import org.beangle.data.dao.OqlBuilder
-import org.beangle.web.action.annotation.mapping
-import org.beangle.web.action.context.Params
-import org.beangle.web.action.view.{Stream, View}
+import org.beangle.webmvc.annotation.mapping
+import org.beangle.webmvc.context.Params
+import org.beangle.webmvc.view.{Stream, View}
 import org.beangle.webmvc.support.action.RestfulAction
 import org.openurp.base.model.{Project, Semester}
 import org.openurp.std.alert.Constants
