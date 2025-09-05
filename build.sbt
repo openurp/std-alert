@@ -1,8 +1,7 @@
-import org.openurp.parent.Dependencies._
-import org.openurp.parent.Settings._
+import org.openurp.parent.Settings.*
 
 ThisBuild / organization := "org.openurp.std.alert"
-ThisBuild / version := "0.0.2-SNAPSHOT"
+ThisBuild / version := "0.0.2"
 
 ThisBuild / scmInfo := Some(
   ScmInfo(
@@ -23,10 +22,10 @@ ThisBuild / developers := List(
 ThisBuild / description := "OpenURP Std Alert"
 ThisBuild / homepage := Some(url("http://openurp.github.io/std-alert/index.html"))
 
-val apiVer = "0.44.0"
-val starterVer = "0.3.58"
-val baseVer = "0.4.51"
-val eduCoreVer = "0.3.11"
+val apiVer = "0.46.0"
+val starterVer = "0.4.0"
+val baseVer = "0.4.55"
+val eduCoreVer = "0.3.16"
 
 val openurp_edu_api = "org.openurp.edu" % "openurp-edu-api" % apiVer
 val openurp_stater_web = "org.openurp.starter" % "openurp-starter-web" % starterVer
@@ -39,5 +38,5 @@ lazy val root = (project in file("."))
     name := "openurp-std-alert-webapp",
     common,
     libraryDependencies ++= Seq(openurp_stater_web, openurp_edu_core),
-    libraryDependencies ++= Seq(openurp_edu_api, beangle_ems_app, openurp_base_tag)
+    libraryDependencies ++= Seq(openurp_edu_api, openurp_base_tag)
   )
