@@ -1,7 +1,7 @@
 import org.openurp.parent.Settings.*
 
 ThisBuild / organization := "org.openurp.std.alert"
-ThisBuild / version := "0.0.3"
+ThisBuild / version := "0.0.4-SNAPSHOT"
 
 ThisBuild / scmInfo := Some(
   ScmInfo(
