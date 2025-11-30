@@ -22,7 +22,7 @@ import org.beangle.commons.collection.Collections
 import org.beangle.data.dao.OqlBuilder
 import org.openurp.base.model.Semester
 import org.openurp.base.std.model.Student
-import org.openurp.edu.grade.BaseServiceImpl
+import org.openurp.edu.grade.service.BaseServiceImpl
 import org.openurp.std.alert.model.{AlertForStdGrade, AlertStatMethod, AlertType}
 import org.openurp.std.alert.service.{AlertForGradeService, UnpassedCreditsStatService}
 

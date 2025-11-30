@@ -20,14 +20,15 @@ package org.openurp.std.alert.service.impl
 import org.beangle.data.dao.{EntityDao, OqlBuilder}
 import org.openurp.base.model.{Project, Semester}
 import org.openurp.base.std.model.Student
-import org.openurp.edu.grade.BaseServiceImpl
+import org.openurp.edu.grade.service.BaseServiceImpl
 import org.openurp.edu.grade.domain.CourseGradeProvider
 import org.openurp.edu.grade.model.{CourseGrade, Grade}
+import org.openurp.edu.grade.service.BaseServiceImpl
 import org.openurp.std.alert.service.UnpassedCreditsStatService
 
 import java.time.LocalDate
 
-class UnpassedCreditsStatBySemester extends BaseServiceImpl with UnpassedCreditsStatService {
+class UnpassedCreditsStatBySemester extends BaseServiceImpl, UnpassedCreditsStatService {
 
   var courseGradeProvider: CourseGradeProvider = _
 

@@ -18,14 +18,16 @@
 package org.openurp.std.alert.service
 
 import org.beangle.commons.collection.Collections
-import org.beangle.data.dao.{EntityDao, OqlBuilder}
+import org.beangle.commons.logging.Logging
+import org.beangle.data.dao.OqlBuilder
+import org.beangle.data.orm.hibernate.AbstractDaoTask
 import org.openurp.base.model.{Project, Semester}
 import org.openurp.base.std.model.Student
 import org.openurp.std.alert.model.AlertForStdGrade
 
 import java.time.LocalDate
 
-class AutoBatchStat extends AbstractJob {
+class AutoBatchStat extends AbstractDaoTask, Logging {
 
   var alertservice: AlertForGradeService = _
 
@@ -49,8 +51,8 @@ class AutoBatchStat extends AbstractJob {
       alertservice.autoStat(std, semster)
     })
 
-    if (stds.size > 0) {
-      logger.info("auto gws: " + stds(0).code + "~" + stds(stds.size - 1).code + "["
+    if (stds.nonEmpty) {
+      logger.info("auto gws: " + stds.head.code + "~" + stds.last.code + "["
         + stds.size + "] using " + (System.currentTimeMillis() - startAt) / 1000.0 + "s")
     } else {
       logger.info("auto gws: all alertStat is updated today!")

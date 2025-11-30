@@ -20,12 +20,12 @@ package org.openurp.std.alert.service.impl
 import org.beangle.data.dao.OqlBuilder
 import org.openurp.base.model.Semester
 import org.openurp.base.std.model.Student
-import org.openurp.edu.grade.BaseServiceImpl
 import org.openurp.edu.grade.model.{CourseGrade, Grade}
+import org.openurp.edu.grade.service.BaseServiceImpl
 import org.openurp.edu.grade.service.filters.BestGradeFilter
 import org.openurp.std.alert.service.UnpassedCreditsStatService
 
-abstract class AllGradeStat extends BaseServiceImpl with UnpassedCreditsStatService {
+abstract class AllGradeStat extends BaseServiceImpl, UnpassedCreditsStatService {
   var bestGradeFilter: BestGradeFilter = _
 
   def stat(std: Student, semester: Semester): Float
